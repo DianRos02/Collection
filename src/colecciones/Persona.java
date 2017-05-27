@@ -11,7 +11,8 @@ import java.util.Objects;
  *
  * @author educacionit
  */
-public class Persona {
+public class Persona implements Comparable <Persona>{
+    
     private String dni;
     private String nombre;
 
@@ -69,6 +70,11 @@ public class Persona {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public int compareTo(Persona o) {
+        return this.nombre.compareTo(o.nombre);
     }
     
     

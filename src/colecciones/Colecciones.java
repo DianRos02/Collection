@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 
 /**
@@ -34,7 +36,7 @@ public class Colecciones {
         for(String e:nombres){
             System.out.println(e);*/
        
-       Set<Persona> personas=new HashSet<>();
+      /* Set<Persona> personas=new HashSet<>();
        personas.add(new Persona ("Juan","10"));
        personas.add(new Persona("Juan","13"));
        personas.add(new Persona("Pedro","14"));
@@ -43,13 +45,27 @@ public class Colecciones {
        System.out.println(personas.size());
        
        for(Persona p:personas){
-           System.out.println(p);
-       }
+           System.out.println(p);*/
+      
+      SortedSet<Persona> personas=new TreeSet<Persona>();
+        personas.add(new Persona("Juan","142"));
+        personas.add(new Persona("Pedro","345"));
+        personas.add(new Persona("Alvaro","220"));
+        personas.add(new Persona("walter","96"));
+         
+
+       
+      for (Persona p: personas){
+          System.out.println(p);
+      }
+      
+      
+    }
        
            
        }
     
     
-    }
+    
     
 
